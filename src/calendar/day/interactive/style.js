@@ -10,8 +10,6 @@ export default function styleConstructor(theme={}) {
       flex: 1,
       alignItems: 'center',
       alignSelf: 'stretch',
-      paddingRight: 4,
-      paddingLeft: 4,
       overflow: 'hidden',
       borderRadius: 17,
       marginLeft: -1
@@ -19,8 +17,6 @@ export default function styleConstructor(theme={}) {
     base: {
       //borderWidth: 1,
       width: 38,
-      paddingRight: 4,
-      paddingLeft: 4,
       height: FILLER_HEIGHT,
       alignItems: 'center'
     },
