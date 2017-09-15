@@ -23,7 +23,11 @@ export default function styleConstructor(theme={}) {
       height: FILLER_HEIGHT,
       flexDirection: 'row',
       left: 0,
-      right: 0
+      right: 0,
+      borderRadius: 17,
+      overflow: 'hidden',
+      marginLeft: 4,
+      marginRight: 4,
     },
     leftFiller: {
       height: FILLER_HEIGHT,
