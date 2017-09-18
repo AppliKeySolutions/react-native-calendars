@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import * as defaultStyle from '../../../style';
+import { Platform } from 'react-native';
 
 const FILLER_HEIGHT = 34;
 
@@ -31,11 +32,23 @@ export default function styleConstructor(theme={}) {
     },
     leftFiller: {
       height: FILLER_HEIGHT,
-      flex: 1
+      flex: 1,
+      ...Platform.select({
+        android: {
+          borderTopLeftRadius: 17,
+          borderBottomLeftRadius: 17,
+        },
+      }),
     },
     rightFiller: {
       height: FILLER_HEIGHT,
-      flex: 1
+      flex: 1,
+      ...Platform.select({
+        android: {
+          borderTopRightRadius: 17,
+          borderBottomRightRadius: 17,
+        },
+      }),
     },
     text: {
       marginTop: 7,
