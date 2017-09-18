@@ -1,6 +1,5 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import * as defaultStyle from '../../../style';
-import { Platform } from 'react-native';
 
 const FILLER_HEIGHT = 34;
 
